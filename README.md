@@ -38,3 +38,38 @@ MCP Helper V2 is not a tool or CLI application. It's a collection of documentati
 - **Add Novel Server**: (Advanced) Adding servers not in our catalog
 
 Each conversation type has its own personality and guided flow to ensure you get exactly what you need.
+
+## Curated MCP Servers
+
+We've evaluated 18 MCP servers for their effectiveness in agentic development. Here are our top recommendations:
+
+### 🌟 Essential for AI Agents (Rating 5/5)
+- **Serena** - Semantic code navigation and understanding. Replace Read/Grep with intelligent symbol search.
+- **Sequential Thinking** - Complex problem planning and reasoning. Break down multi-step tasks systematically.
+- **Memory** - Persistent context across sessions. Never lose project knowledge between conversations.
+
+### 🚀 Core Development Stack (Rating 4/5)
+- **GitHub** - Full git workflow integration. PRs, issues, code management from Claude.
+- **Context7** - Up-to-date framework documentation. Prevent hallucination with real docs.
+- **Firecrawl** - Web scraping and content extraction. Access any web documentation.
+- **Perplexity** - Deep research and multi-source analysis. Answer complex technical questions.
+
+### 💼 Team Collaboration (Rating 3-5/5)
+- **Slack** - Team communication and notifications. Keep everyone in the loop.
+- **Atlassian** - Jira/Confluence integration. Track tasks and documentation.
+- **Notion** - Knowledge base management. Organize team documentation.
+
+### 🔧 Specialized Tools
+- **PostgreSQL** - Database operations and queries. Direct SQL access when needed.
+- **Playwright/Puppeteer** - Browser automation and testing. Web scraping and E2E tests.
+- **Docker MCP Toolkit** - Container management. Control Docker from Claude.
+- **LinkedIn** - Professional network integration. Research and recruitment.
+- **Brave Search** - Privacy-focused web search. Alternative to standard search.
+- **Claude Code** - Meta-server for Claude operations. Self-improvement capabilities.
+- **OpenMemory** - Alternative memory solution. Enhanced embedding-based recall.
+
+Each server includes **Agentic Usefulness Ratings** (Human Verification 1-5, AI Agent 1-5) to help you choose based on your workflow. See [rating-explanation.md](rating-explanation.md) for detailed explanations.
+
+## Performance Note
+
+**Use Native Claude Code CLI** (`claude`) instead of `claude mcp serve` for **37% better performance**. Native tools avoid the 18+ second delays common with MCP server configurations.
