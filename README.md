@@ -37,7 +37,7 @@ MCP Helper V2 is not a tool or CLI application. It's a collection of documentati
 - **Reconfigure Existing**: Modifying existing server configurations
 - **Add Novel Server**: (Advanced) Adding servers not in our catalog
 
-Each conversation type has its own personality and guided flow to ensure you get exactly what you need.
+Claude will adapt to your preferred interaction style (verbosity, tone, and depth) which you'll set on first use.
 
 ## Curated MCP Servers
 
