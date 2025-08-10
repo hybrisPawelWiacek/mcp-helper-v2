@@ -21,8 +21,21 @@ A conversational framework for configuring MCP servers with Claude Code.
 
 ## Requirements
 
-- Docker Desktop with MCP Toolkit enabled
-- Claude Code CLI
+### Docker Desktop with MCP Toolkit
+
+1. **Install Docker Desktop**:
+   - **Mac**: Download from [docker.com](https://docker.com), drag to Applications
+   - **Windows**: Download installer from [docker.com](https://docker.com), run the .exe
+   - **Linux**: Download .deb package, run `sudo apt install docker-desktop-*.deb`
+
+2. **Enable MCP Toolkit**:
+   - Open Docker Desktop → Settings (gear icon)
+   - Navigate to "Beta features"
+   - Check "Enable Docker MCP Toolkit"
+   - Click "Apply & Restart"
+
+### Claude Code CLI
+Install from [claude.ai/code](https://claude.ai/code)
 
 That's it! Claude will guide you through everything else.
 
