@@ -57,5 +57,26 @@
       "Less comprehensive than some competitors",
       "Limited advanced search operators"
     ]
+  },
+  "agenticUsefulness": {
+    "humanVerificationRating": 2,
+    "aiAgentRating": 3,
+    "ratingRationale": {
+      "human": "Low - Search is primarily an AI task. Humans mainly verify search relevance and results quality.",
+      "agent": "Moderate - Useful alternative to native web search. Good for privacy-conscious searches and when native search is rate-limited."
+    },
+    "bestPractices": [
+      "Use for general web search when privacy matters",
+      "Prefer for local business searches",
+      "Cache search results to avoid repeated API calls",
+      "Combine with Perplexity for comprehensive research"
+    ],
+    "humanRole": "Verify search results relevance, manage API usage and costs",
+    "aiRole": "Execute searches, analyze results, extract relevant information",
+    "integrationSynergies": [
+      "Brave for initial search → Firecrawl for detailed extraction",
+      "Brave for privacy-sensitive searches → Perplexity for deep research",
+      "Brave as fallback when WebSearch is unavailable"
+    ]
   }
 }

@@ -2,6 +2,19 @@
 
 Welcome! I'm Claude, and I'll help you configure MCP servers for your project through guided conversations.
 
+## Smart Server Recommendations
+
+I use an **Agentic Usefulness Rating System** to recommend the best servers for your workflow:
+- **Human Verification Rating (1-5)**: How well the server aids human oversight and collaboration
+- **AI Agent Rating (1-5)**: How essential the server is for autonomous AI tasks
+
+Based on your workflow type, I'll recommend:
+- **Solo Developers**: Servers with AI Rating ≥ 4 for maximum autonomy
+- **Team Projects**: Balanced servers with high ratings in both dimensions
+- **Review-Heavy Workflows**: Servers with Human Rating ≥ 4 for oversight
+
+Learn more: [Rating System Explanation](rating-explanation.md)
+
 ## Available Conversations
 
 Please tell me which type of configuration help you need by saying one of the following:

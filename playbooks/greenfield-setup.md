@@ -44,33 +44,52 @@ For **All Projects**:
 
 ### Step 3: Server Recommendations
 
-Based on answers, recommend servers from these categories:
+Based on answers, recommend servers using our **Agentic Usefulness Ratings** (see [rating-explanation.md](../rating-explanation.md) for details):
 
-#### Essential Servers (Always Recommend)
-1. **Serena** - Semantic code navigation
-2. **Sequential Thinking** - Complex problem planning
-3. **Memory** (via Docker MCP Toolkit) - Persistent context
+#### Essential Servers (Always Recommend - AI Rating ≥ 4)
+1. **Serena** (AI: 5, Human: 4) - Semantic code navigation
+2. **Sequential Thinking** (AI: 5, Human: 4) - Complex problem planning
+3. **Memory** (AI: 5, Human: 3) - Persistent context
+4. **Context7** (AI: 5, Human: 3) - Up-to-date documentation
+5. **GitHub Official** (AI: 5, Human: 4) - Full development workflow
 
-#### Development Servers
-- **GitHub Official** - Full GitHub integration
-- **Context7** - Framework documentation
-- **Firecrawl** - Web scraping and extraction
+#### High-Value Development Servers (AI Rating 4+)
+- **Perplexity Ask** (AI: 4, Human: 2) - Deep research capabilities
+- **Firecrawl** (AI: 4, Human: 2) - Web scraping and extraction
 
-#### Research & Discovery
-- **Perplexity Ask** - Deep research
-- **Brave Search** - Web search
-- **WebSearch** - Alternative search
+#### Team Collaboration (High Human Rating)
+- **Slack** (AI: 3, Human: 5) - Critical for team communication
+- **Atlassian** (AI: 3, Human: 4) - Jira/Confluence tracking
+- **Notion** (AI: 3, Human: 4) - Documentation management
 
-#### Collaboration
-- **Slack** - Team communication
-- **Notion** - Documentation
-- **Atlassian** - Jira/Confluence
+#### Specialized Servers
+- **PostgreSQL** (AI: 3, Human: 2) - Database operations
+- **Brave Search** (AI: 3, Human: 2) - Privacy-focused search
+- **Playwright/Puppeteer** (AI: 3, Human: 2) - Browser automation
 
-#### Data & Storage
-- **PostgreSQL** - Database operations
-- **MongoDB** (if available) - NoSQL operations
+### Step 4: Recommend Based on Workflow Type
 
-### Step 4: Configuration Scope
+**Say:**
+"Based on your needs, here's my recommendation:"
+
+**For Solo Developers (Maximize AI Autonomy):**
+"I recommend focusing on servers with AI Rating ≥ 4:
+- Essential: Serena, Sequential Thinking, Memory, GitHub, Context7
+- These will give you maximum AI assistance and automation"
+
+**For Team Projects (Balance Human & AI):**
+"I recommend a balanced approach:
+- AI Power: Serena (5), GitHub (5), Sequential Thinking (5)
+- Human Collaboration: Slack (Human: 5), Atlassian (Human: 4)
+- This ensures both powerful AI assistance and team visibility"
+
+**For Review-Heavy Workflows (Human Oversight):**
+"I recommend prioritizing Human Verification ratings:
+- Slack (Human: 5) for notifications
+- GitHub (Human: 4) for PR workflow
+- Sequential Thinking (Human: 4) for transparent reasoning"
+
+### Step 5: Configuration Scope
 
 **Ask:**
 "Would you like these servers configured:
@@ -100,22 +119,34 @@ For each selected server, ask for required credentials:
 ### Step 6: Implementation
 
 **Say:**
-"Excellent! Let me set everything up for you."
+"Excellent! Let me set everything up for you. I'll configure this for optimal performance using native Claude Code tools."
+
+**Important Performance Note:**
+"I'm setting this up to use Claude Code's native tools directly, which gives you **37% faster performance** compared to the `claude mcp serve` approach. This is the recommended configuration for most developers."
 
 **Actions to take:**
 
-1. **For Global Configuration:**
+1. **For Global Configuration (Native Tools - Recommended):**
    ```bash
    # Create ~/.claude.json with server configurations
    # Create ~/.claude-env-template with placeholders
    # Guide user to fill in ~/.claude-env
+   # Note: No 'claude mcp serve' needed - just 'claude'
    ```
 
-2. **For Local Configuration:**
+2. **For Local Configuration (Native Tools - Recommended):**
    ```bash
    # Create .env.mcp in project root
-   # Create claude-mcp-env.sh launch script
+   # Create claude-env.sh launch script (uses native tools)
    # Add .env.mcp to .gitignore
+   # Launch with: source .env.mcp && claude
+   ```
+
+3. **Alternative: If Claude Desktop Integration Needed:**
+   ```bash
+   # Only if user specifically requests Claude Desktop integration
+   # Warn about 18+ second delays and process issues
+   # Configure 'claude mcp serve' approach
    ```
 
 3. **Create CLAUDE.md** with:

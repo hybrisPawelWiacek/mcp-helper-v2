@@ -57,5 +57,26 @@
       "Costs associated with API usage",
       "Rate limits based on plan"
     ]
+  },
+  "agenticUsefulness": {
+    "humanVerificationRating": 2,
+    "aiAgentRating": 4,
+    "ratingRationale": {
+      "human": "Low - Primarily an automation tool. Humans verify scraped content quality but don't interact directly with the scraping process.",
+      "agent": "Very High - Essential for web research and documentation extraction. Enables AI to access and understand web content that would otherwise be inaccessible."
+    },
+    "bestPractices": [
+      "Cache scraped content to avoid repeated API calls",
+      "Use structured extraction for consistent data formats",
+      "Batch related scraping operations together",
+      "Prefer map before crawl to understand site structure"
+    ],
+    "humanRole": "Define scraping requirements, verify extracted data quality, manage API costs",
+    "aiRole": "Execute scraping operations, extract structured data, analyze web content",
+    "integrationSynergies": [
+      "Perplexity for finding sources → Firecrawl for detailed extraction",
+      "Firecrawl for documentation → Memory for persistent storage",
+      "Context7 for official docs → Firecrawl for implementation examples"
+    ]
   }
 }
