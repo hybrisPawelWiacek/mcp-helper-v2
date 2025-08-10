@@ -70,6 +70,21 @@
       "Save important discoveries or decisions"
     ]
   },
+  "advancedCapabilities": [
+    "Graph-based knowledge representation with entities and relations",
+    "Semantic search across stored memories",
+    "Observation-based entity tracking",
+    "Persistent storage with Docker volumes at ~/mcp-data/memory/",
+    "Multiple storage backends (local, cloud)",
+    "Automatic context maintenance across sessions",
+    "Knowledge graph visualization capabilities"
+  ],
+  "integrationPatterns": {
+    "knowledgeBuilding": "Serena discovers → Memory stores → Future sessions leverage",
+    "decisionTracking": "Sequential Thinking reasons → Memory persists → Decisions auditable",
+    "contextMaintenance": "Session ends → Memory saves state → Next session restores context",
+    "researchCaching": "Perplexity/Context7 research → Memory caches → Avoid repeated lookups"
+  },
   "agenticUsefulness": {
     "humanVerificationRating": 3,
     "aiAgentRating": 5,

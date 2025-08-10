@@ -83,6 +83,23 @@
       "Use firecrawl for GitHub Pages sites"
     ]
   },
+  "advancedCapabilities": [
+    "Full GitHub API v4 GraphQL support",
+    "Repository file CRUD operations",
+    "Branch protection and workflow management",
+    "Code search with advanced syntax",
+    "PR review automation with Copilot integration",
+    "Issue and project board management",
+    "GitHub Actions workflow triggering",
+    "Gist creation and management",
+    "User and organization profile access"
+  ],
+  "integrationPatterns": {
+    "developmentFlow": "Serena analyzes → GitHub creates branch → Changes committed → PR created",
+    "reviewFlow": "PR created → Copilot reviews → Human reviews → Merge",
+    "issueFlow": "Jira issue → GitHub issue linked → PR references issue → Auto-close on merge",
+    "notificationFlow": "PR created → Slack notification → Team reviews → Feedback loop"
+  },
   "agenticUsefulness": {
     "humanVerificationRating": 4,
     "aiAgentRating": 5,

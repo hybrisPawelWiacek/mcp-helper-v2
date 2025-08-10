@@ -80,6 +80,21 @@
       "Works synergistically with TodoWrite"
     ]
   },
+  "advancedCapabilities": [
+    "Dynamic thought count adjustment during reasoning",
+    "Revision and branching of thought paths",
+    "Uncertainty expression and alternative exploration",
+    "Filtering irrelevant information during analysis",
+    "Hypothesis generation and iterative verification",
+    "Adaptive problem-solving with course correction",
+    "Multi-phase reasoning with checkpoints"
+  ],
+  "integrationPatterns": {
+    "planningPhase": "Sequential Thinking → plan implementation → ExitPlanMode → TodoWrite creates tasks",
+    "executionPhase": "TodoWrite task → Sequential Thinking analyzes HOW → Implementation → Task complete",
+    "debuggingPhase": "Issue identified → Sequential Thinking hypothesizes → Test hypothesis → Iterate",
+    "researchPhase": "Sequential Thinking plans research → Perplexity/Context7 gather info → Sequential analyzes"
+  },
   "agenticUsefulness": {
     "humanVerificationRating": 4,
     "aiAgentRating": 5,
