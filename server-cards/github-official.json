@@ -40,24 +40,28 @@
   ],
   "useCases": {
     "generic": [
-      "Repository management and exploration",
+      "Search code across all GitHub repositories (primary use case)",
+      "Repository discovery and exploration",
       "Issue and pull request operations",
-      "Code search across repositories",
+      "Advanced code search with GitHub's search syntax",
       "GitHub API interactions"
     ],
     "project": [
+      "Search across GitHub for MCP server implementations",
+      "Find code examples and patterns in any repository",
       "Explore MCP server repositories for implementation details",
       "Check issues and pull requests for server projects",
-      "Search for configuration examples in repos",
+      "Search for configuration examples across all repos",
       "Analyze server implementation patterns"
     ]
   },
   "prosCons": {
     "pros": [
+      "Powerful code search across all GitHub repositories",
       "Official GitHub integration",
       "Comprehensive GitHub API coverage",
       "Docker-based isolation for security",
-      "Supports all GitHub features"
+      "Supports all GitHub features including advanced search"
     ],
     "cons": [
       "Requires Docker to be installed",
@@ -67,6 +71,8 @@
   },
   "toolSelectionProtocol": {
     "primaryUse": [
+      "Searching code across all GitHub repositories",
+      "Finding implementation examples and patterns",
       "Exploring MCP server repositories",
       "Checking issues and pull requests",
       "Understanding implementation details",
@@ -84,10 +90,12 @@
     ]
   },
   "advancedCapabilities": [
+    "Advanced code search across all public and accessible private repos",
+    "GitHub search syntax: language filters, file paths, symbols",
+    "Search by user, organization, stars, forks, and more",
     "Full GitHub API v4 GraphQL support",
     "Repository file CRUD operations",
     "Branch protection and workflow management",
-    "Code search with advanced syntax",
     "PR review automation with Copilot integration",
     "Issue and project board management",
     "GitHub Actions workflow triggering",
