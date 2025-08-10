@@ -48,6 +48,10 @@ MCP Helper V2 is not a tool or CLI application. It's a collection of documentati
 - **Greenfield Setup**: Adding MCP servers to new projects
 - **Global to Local**: Overriding global server configurations locally
 - **Reconfigure Existing**: Modifying existing server configurations
+- **Add Novel Server**: Research and integrate new MCP servers
+- **Create Subagent**: Design specialized AI agents with MCP protocols
+- **Configure MCP Protocols**: Optimize server usage for existing agents
+- **Assemble Subagent Team**: Build multi-agent systems
 - **Add Novel Server**: (Advanced) Adding servers not in our catalog
 
 Claude will adapt to your preferred interaction style (verbosity, tone, and depth) which you'll set on first use.
@@ -82,6 +86,36 @@ We've evaluated 18 MCP servers for their effectiveness in agentic development. H
 - **OpenMemory** - Alternative memory solution. Enhanced embedding-based recall.
 
 Each server includes **Agentic Usefulness Ratings** (Human Verification 1-5, AI Agent 1-5) to help you choose based on your workflow. See [rating-explanation.md](rating-explanation.md) for detailed explanations.
+
+## Subagent Configuration System
+
+MCP Helper V2 includes a comprehensive subagent configuration system with **10+ specialized agent archetypes**, each optimized with specific MCP server protocols.
+
+### Agent Cards
+Pre-configured agent archetypes with optimized MCP protocols:
+- **[Backend Architect](agent-cards/backend-architect.md)** - Serena → GitHub → Postgres
+- **[Frontend Developer](agent-cards/frontend-developer.md)** - Firecrawl → Context7 → Puppeteer
+- **[DevOps Engineer](agent-cards/devops-engineer.md)** - GitHub → Docker → Sequential Thinking
+- **[Data Scientist](agent-cards/data-scientist.md)** - Postgres → Perplexity → Memory
+- **[QA Engineer](agent-cards/qa-engineer.md)** - Puppeteer → Serena → GitHub
+- **[Security Auditor](agent-cards/security-auditor.md)** - Serena → GitHub → Perplexity
+- **[Project Manager](agent-cards/project-manager.md)** - Atlassian → Slack → Memory
+- **[Documentation Writer](agent-cards/documentation-writer.md)** - Notion → Context7 → Firecrawl
+- **[Code Reviewer](agent-cards/code-reviewer.md)** - Serena → GitHub → Sequential Thinking
+- **[Research Analyst](agent-cards/research-analyst.md)** - Perplexity → Brave-search → Context7
+
+### Key Features
+- **Optimized MCP Protocols**: Each agent has primary/secondary/restricted tool hierarchies
+- **Perplexity System Prompts**: Specialized research personalities per agent type
+- **Performance Metrics**: Measurable targets for each role
+- **Integration Patterns**: How agents collaborate in teams
+
+### Organizational Patterns
+- **Role-Based**: Group by function (Dev, QA, Ops)
+- **Technology-Based**: Group by stack (Frontend, Backend, Data)
+- **Hierarchical**: Lead agents coordinate specialist teams
+
+See [Agent Cards Directory](agent-cards/README.md) for complete documentation.
 
 ## Performance Note
 
