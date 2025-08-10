@@ -108,6 +108,7 @@ For each selected server, ask for required credentials:
 
 **Perplexity**:
 - "Do you have a Perplexity API key? (Sign up at perplexity.ai)"
+- "I'll configure Perplexity with persona-based system prompts for targeted research (Senior Developer, Architect, etc.)"
 
 **Brave Search**:
 - "Do you have a Brave Search API key? (Free tier available)"
@@ -148,11 +149,19 @@ For each selected server, ask for required credentials:
    # Configure 'claude mcp serve' approach
    ```
 
-3. **Create CLAUDE.md** with:
+3. **Configure Perplexity Personas** (if Perplexity selected):
+   - Senior Developer: For debugging and implementation
+   - Solution Architect: For system design decisions
+   - DevOps Engineer: For deployment and infrastructure
+   - Security Expert: For security considerations
+   - MVP Builder: For rapid prototyping
+   
+4. **Create CLAUDE.md** with:
    - List of configured servers
    - Their purposes
    - How to use them
    - Required environment variables
+   - Perplexity persona guidelines (if applicable)
 
 ### Step 7: Validation
 

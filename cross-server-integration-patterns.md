@@ -171,19 +171,46 @@ Example workflow:
 11. Atlassian: Update ticket status
 ```
 
-### Example 2: Bug Investigation
+### Example 2: Bug Investigation (Enhanced Pattern)
 ```
-1. Slack: Receive bug report from team
+1. Slack/Issue: Receive bug report from team
 2. Memory: Check if similar bug was seen before
-3. Serena: Analyze code at error location
-4. Sequential Thinking: Form hypotheses
-5. Playwright: Reproduce bug in browser
-6. PostgreSQL: Check data state
-7. Perplexity: Research error message
-8. Serena: Implement fix
-9. Docker: Verify fix in isolation
-10. GitHub: Push fix
-11. Slack: Report resolution
+3. Serena: Analyze code at error location (semantic understanding)
+4. Sequential Thinking: Form hypotheses about root cause
+5. Perplexity: Research error with "Senior developer debugging X" persona
+6. GitHub Search: Find how other projects solved similar issues
+7. Context7: Check if framework docs mention this behavior
+8. Serena: Navigate to all affected code paths
+9. Sequential Thinking: Synthesize external solutions with codebase
+10. Serena: Implement fix using semantic refactoring
+11. Docker: Verify fix in isolation
+12. GitHub: Create PR with detailed explanation
+13. Slack: Report resolution with learnings
+14. Memory: Store root cause and solution for future
+```
+
+### Example 3: Advanced Bug Root Cause Analysis
+```
+Phase 1 - Understanding the Problem:
+1. Serena: Semantic analysis of error location and call stack
+2. Sequential Thinking: Break down possible causes
+3. Memory: Retrieve similar past issues
+
+Phase 2 - External Research:
+4. Perplexity (Senior Dev persona): "Production bug: [error details]"
+5. GitHub Search: Search across repos for similar error patterns
+6. Context7: Check framework/library known issues
+
+Phase 3 - Solution Synthesis:
+7. Sequential Thinking: Compare external solutions with codebase
+8. Serena: Identify all code paths needing changes
+9. Perplexity (Architect persona): "Best practices for [solution approach]"
+
+Phase 4 - Implementation:
+10. Serena: Refactor with semantic understanding
+11. Docker/Tests: Validate fix
+12. GitHub: PR with comprehensive explanation
+13. Memory: Document pattern for future reference
 ```
 
 ## Measuring Success

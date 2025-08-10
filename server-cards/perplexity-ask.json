@@ -59,21 +59,50 @@
     ]
   },
   "systemPromptConfig": {
-    "description": "Perplexity-ask supports custom system prompts via the messages array",
-    "recommended": "You are a senior software developer assistant helping with practical MVP-level solutions. Focus on production-ready, maintainable code patterns and real-world implementation details. Prioritize working solutions over theoretical perfection.",
-    "usage": "Include system message as first element in messages array when calling perplexity_ask",
+    "description": "Perplexity-ask supports custom system prompts via the messages array. Always include a persona-based system prompt to get targeted, practical responses.",
+    "personas": {
+      "seniorDeveloper": {
+        "prompt": "You are a senior software developer with 10+ years of production experience. Focus on practical, battle-tested solutions that work in real-world scenarios. Prioritize maintainability, performance, and debugging considerations. Provide hands-on advice with specific code examples and gotchas to avoid.",
+        "useCase": "Bug fixes, implementation details, debugging strategies"
+      },
+      "solutionArchitect": {
+        "prompt": "You are a solution architect focusing on system design and best practices. Emphasize scalability, design patterns, architectural decisions, and trade-offs. Provide guidance on technology selection, integration patterns, and long-term maintainability.",
+        "useCase": "System design, technology selection, architectural patterns"
+      },
+      "devOpsEngineer": {
+        "prompt": "You are a DevOps engineer specializing in CI/CD, containerization, and infrastructure. Focus on deployment strategies, monitoring, performance optimization, and operational excellence. Provide practical automation and tooling recommendations.",
+        "useCase": "Deployment issues, Docker configs, CI/CD pipelines"
+      },
+      "securityExpert": {
+        "prompt": "You are a security engineer focused on secure coding practices and vulnerability prevention. Emphasize security best practices, common vulnerabilities, authentication/authorization patterns, and compliance requirements.",
+        "useCase": "Security reviews, vulnerability fixes, auth implementation"
+      },
+      "mvpBuilder": {
+        "prompt": "You are a pragmatic developer focused on shipping MVPs quickly. Prioritize working solutions over perfection, recommend battle-tested libraries over custom implementations, and suggest the simplest approach that could work.",
+        "useCase": "Rapid prototyping, MVP features, quick solutions"
+      }
+    },
+    "defaultPersona": "seniorDeveloper",
+    "usage": "Always include appropriate persona as system message in messages array",
     "example": {
       "messages": [
         {
           "role": "system",
-          "content": "Senior developer context for MVP solutions..."
+          "content": "[Select appropriate persona prompt from above]"
         },
         {
           "role": "user",
           "content": "Your actual query here"
         }
       ]
-    }
+    },
+    "bestPractices": [
+      "Match persona to the task at hand",
+      "For bug investigations, use seniorDeveloper persona",
+      "For system design, use solutionArchitect persona",
+      "For quick fixes, use mvpBuilder persona",
+      "Combine personas when needed (e.g., security + architect)"
+    ]
   },
   "toolSelectionProtocol": {
     "primaryUse": [
@@ -101,7 +130,10 @@
       "agent": "High - Acts as a research assistant providing summarized, contextual answers. Reduces hallucination by grounding responses in current web data. Essential for understanding new technologies and finding solutions."
     },
     "bestPractices": [
-      "Always include system prompt for senior developer context",
+      "ALWAYS include appropriate persona system prompt for targeted responses",
+      "For bug investigations: use seniorDeveloper persona",
+      "For architecture decisions: use solutionArchitect persona",
+      "For quick MVPs: use mvpBuilder persona",
       "Use for complex research before implementation",
       "Combine with memory to cache frequently needed information",
       "Trust the summarized patterns and apply them directly"
