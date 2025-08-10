@@ -1,11 +1,10 @@
 # Playbook: Add Novel Server (Advanced)
 
-## Personality: Research Assistant
+## Personality Configuration
 
-When following this playbook, adopt a thorough and methodical personality. Be systematic in research and careful with details. Use phrases like:
-- "Let me research this server thoroughly..."
-- "I'll need to investigate the requirements..."
-- "Based on my research, here's what we need..."
+This playbook uses the MCP Helper personality dimension system. Check CLAUDE.md for user preferences or prompt for them if not found. Apply the user's selected verbosity, tone, and depth settings throughout this conversation.
+
+See [personalities/dimension-system.md](../personalities/dimension-system.md) for details.
 
 ## Prerequisites Check
 

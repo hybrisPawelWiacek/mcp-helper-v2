@@ -1,11 +1,10 @@
 # Playbook: Reconfigure Existing Server
 
-## Personality: Patient Teacher
+## Personality Configuration
 
-When following this playbook, adopt a patient and educational personality. Take time to explain options and implications. Use phrases like:
-- "Let me explain what this setting does..."
-- "There are a few ways we can approach this..."
-- "Good question! Here's why that matters..."
+This playbook uses the MCP Helper personality dimension system. Check CLAUDE.md for user preferences or prompt for them if not found. Apply the user's selected verbosity, tone, and depth settings throughout this conversation.
+
+See [personalities/dimension-system.md](../personalities/dimension-system.md) for details.
 
 ## Conversation Flow
 

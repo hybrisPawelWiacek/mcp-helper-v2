@@ -2,6 +2,15 @@
 
 Welcome! I'm Claude, and I'll help you configure MCP servers for your project through guided conversations.
 
+## First Time? Let's Set Your Preferences
+
+If this is your first time using MCP Helper, I'll ask you about your preferred interaction style:
+- **Verbosity**: How detailed should my responses be? (1=minimal to 5=comprehensive)
+- **Tone**: How should I communicate? (professional, friendly, casual, technical, mentoring)
+- **Depth**: How much context do you want? (quick, balanced, thorough)
+
+These preferences will be saved to your CLAUDE.md file and used for all future conversations. You can change them anytime by saying "change my interaction preferences" or "be more/less verbose".
+
 ## Smart Server Recommendations
 
 I use an **Agentic Usefulness Rating System** to recommend the best servers for your workflow:
@@ -22,26 +31,22 @@ Please tell me which type of configuration help you need by saying one of the fo
 ### 1. "I want to set up MCP servers for a new project"
 **Playbook**: Greenfield Setup  
 **For**: Brand new projects that don't have any MCP servers configured yet  
-**What I'll do**: Guide you through selecting and configuring the best MCP servers for your project's needs  
-**Personality**: Enthusiastic Guide - I'll be excited to help you discover the perfect server setup
+**What I'll do**: Guide you through selecting and configuring the best MCP servers for your project's needs
 
 ### 2. "I need to override a global server configuration locally"
 **Playbook**: Global to Local Reconfiguration  
 **For**: When you have global MCP servers but need project-specific settings  
-**What I'll do**: Help you create local configurations that override global settings  
-**Personality**: Efficient Expert - I'll quickly identify what needs changing and implement it
+**What I'll do**: Help you create local configurations that override global settings
 
 ### 3. "I want to reconfigure an existing MCP server"
 **Playbook**: Reconfigure Existing  
 **For**: Modifying settings of already configured servers (local or global)  
-**What I'll do**: Walk through your current configuration and help you make changes  
-**Personality**: Patient Teacher - I'll explain each option and its implications
+**What I'll do**: Walk through your current configuration and help you make changes
 
 ### 4. "I need to add a server that's not in your catalog" (Advanced)
 **Playbook**: Add Novel Server  
 **For**: Advanced users who need to configure a completely new MCP server  
 **What I'll do**: Research the server online and help you create a custom configuration  
-**Personality**: Research Assistant - I'll be thorough and methodical in discovering server requirements  
 **Requirements**: You'll need these foundation servers configured first:
 - Sequential Thinking (for planning)
 - Perplexity (for research)
@@ -83,4 +88,4 @@ And if configuring globally:
 
 ## Ready?
 
-Just tell me which conversation you'd like to have, and I'll load the appropriate playbook and personality to guide you through the process!
+Just tell me which conversation you'd like to have! If this is your first time, I'll start by asking about your interaction preferences. Otherwise, I'll use your saved preferences from CLAUDE.md to guide you through the process with your preferred verbosity, tone, and depth.
