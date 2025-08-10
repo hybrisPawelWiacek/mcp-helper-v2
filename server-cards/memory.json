@@ -67,7 +67,9 @@
     "mandatory": [
       "Save state when closing session",
       "Save after completing major features",
-      "Save important discoveries or decisions"
+      "Save important discoveries or decisions",
+      "AUTO-SAVE when context reaches 94% capacity (6% remaining)",
+      "Create checkpoint before auto-compaction at 95%"
     ]
   },
   "advancedCapabilities": [
@@ -77,8 +79,34 @@
     "Persistent storage with Docker volumes at ~/mcp-data/memory/",
     "Multiple storage backends (local, cloud)",
     "Automatic context maintenance across sessions",
-    "Knowledge graph visualization capabilities"
+    "Knowledge graph visualization capabilities",
+    "Auto-save on low context (6% remaining) via hooks integration",
+    "Context-aware state preservation before auto-compaction",
+    "Checkpoint creation and restoration for context recovery"
   ],
+  "contextManagement": {
+    "autoSaveCapability": "Integrates with Claude Code hooks to automatically save state when context window reaches 94% capacity (6% remaining)",
+    "implementation": {
+      "preCompactHook": "Triggers automatic state save before context compaction at 95% capacity",
+      "stateCapture": [
+        "Current project status and progress",
+        "Active to-dos and work items",
+        "Important decisions and findings",
+        "Checkpoint for post-compaction restoration"
+      ],
+      "hookConfiguration": {
+        "event": "PreCompact or UserPromptSubmit",
+        "triggerThreshold": "94% context usage",
+        "action": "Execute save_state_script.py to store critical context"
+      }
+    },
+    "monitoringOptions": [
+      "MCP Token Monitor for usage tracking",
+      "Custom hooks for threshold detection",
+      "Manual checkpoint commands in CLAUDE.md"
+    ],
+    "recoveryStrategy": "After auto-compaction, query stored memories to restore working context and continue seamlessly"
+  },
   "integrationPatterns": {
     "knowledgeBuilding": "Serena discovers → Memory stores → Future sessions leverage",
     "decisionTracking": "Sequential Thinking reasons → Memory persists → Decisions auditable",
@@ -96,7 +124,11 @@
       "Save project state at every major milestone",
       "Create knowledge graph of entities and relationships",
       "Store design decisions with rationale",
-      "Query memory before starting new sessions"
+      "Query memory before starting new sessions",
+      "Configure hooks for auto-save at 94% context usage",
+      "Create checkpoint commands in CLAUDE.md for manual saves",
+      "Use with Token Monitor to track context consumption",
+      "Restore from checkpoint after auto-compaction events"
     ],
     "humanRole": "Review stored memories to understand AI's context and decisions",
     "agentRole": "Persistent knowledge base - MANDATORY for session continuity",
