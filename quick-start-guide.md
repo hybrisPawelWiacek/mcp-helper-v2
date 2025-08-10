@@ -54,6 +54,15 @@ Please tell me which type of configuration help you need by saying one of the fo
 - Serena (for code analysis)
 - Context7 (for documentation)
 
+### 5. "I want to disable a global server for this project"
+**Playbook**: Disable Project Server  
+**For**: When you have global MCP servers but want to exclude specific ones from a project  
+**What I'll do**: Guide you through creating project overrides that disable global servers locally  
+**Use Cases**:
+- Security-sensitive projects
+- Client projects with different requirements
+- Testing environments needing isolation
+
 ## How to Start
 
 Simply tell me which conversation you'd like to have. For example:
@@ -61,6 +70,7 @@ Simply tell me which conversation you'd like to have. For example:
 - "Help me override the GitHub server settings for this project"
 - "I need to reconfigure my Slack server"
 - "I want to add the Sigma MCP server" (if it's not in our catalog)
+- "I want to disable the memory server for this project"
 
 ## What I'll Need From You
 
