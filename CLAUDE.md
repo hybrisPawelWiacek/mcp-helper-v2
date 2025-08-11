@@ -26,21 +26,27 @@ I'll ask about your preferred interaction style:
 
 ### Available Conversations
 
+#### 🎨 Interaction Preferences
+1. **"Set my interaction preferences"** → [Set Interaction Preferences](playbooks/set-interaction-preferences.md)
+   - Configure verbosity (1-5), tone, and depth
+   - Natural language adjustments ("be more casual")
+   - Saves to CLAUDE.md for persistence
+
 #### 🛠️ MCP Server Configuration
-1. **"Set up MCP servers for a new project"** → [Greenfield Setup](playbooks/greenfield-setup.md)
-2. **"Override global server configuration locally"** → [Global to Local](playbooks/reconfigure-global-to-local.md)
-3. **"Reconfigure an existing MCP server"** → [Reconfigure Existing](playbooks/reconfigure-existing.md)
-4. **"Add a server not in catalog"** → [Add Novel Server](playbooks/add-novel-server.md)
-5. **"Disable a global server for this project"** → [Disable Project Server](playbooks/disable-project-server.md)
+2. **"Set up MCP servers for a new project"** → [Greenfield Setup](playbooks/greenfield-setup.md)
+3. **"Override global server configuration locally"** → [Global to Local](playbooks/reconfigure-global-to-local.md)
+4. **"Reconfigure an existing MCP server"** → [Reconfigure Existing](playbooks/reconfigure-existing.md)
+5. **"Add a server not in catalog"** → [Add Novel Server](playbooks/add-novel-server.md)
+6. **"Disable a global server for this project"** → [Disable Project Server](playbooks/disable-project-server.md)
 
 #### 🤖 Subagent Configuration
-6. **"Create a specialized subagent"** → [Create Subagent](playbooks/create-subagent.md)
-7. **"Optimize MCP protocols for agents"** → [Configure MCP Protocols](playbooks/configure-mcp-protocols.md)
-8. **"Assemble a team of subagents"** → [Assemble Subagent Team](playbooks/assemble-subagent-team.md)
-9. **"Import agents from community"** → [Import Existing Agents](playbooks/import-existing-agents.md)
+7. **"Create a specialized subagent"** → [Create Subagent](playbooks/create-subagent.md)
+8. **"Optimize MCP protocols for agents"** → [Configure MCP Protocols](playbooks/configure-mcp-protocols.md)
+9. **"Assemble a team of subagents"** → [Assemble Subagent Team](playbooks/assemble-subagent-team.md)
+10. **"Import agents from community"** → [Import Existing Agents](playbooks/import-existing-agents.md)
 
 #### 📁 Project Organization
-10. **"Set up CLAUDE.md files for subprojects"** → [Setup Project CLAUDE.md](playbooks/setup-project-claude-md.md)
+11. **"Set up CLAUDE.md files for subprojects"** → [Setup Project CLAUDE.md](playbooks/setup-project-claude-md.md)
 
 ## Project Structure
 ```
