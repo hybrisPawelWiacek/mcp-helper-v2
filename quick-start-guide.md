@@ -1,30 +1,25 @@
 # MCP Helper V2 - Quick Start Guide
 
-Welcome! I'm Claude, and I'll help you configure MCP servers and subagents for your project through guided conversations.
+> **Note**: This guide has been integrated into [CLAUDE.md](CLAUDE.md), which is now the primary instruction file for MCP-Helper V2. Please refer to CLAUDE.md for the most up-to-date information and conversation options.
 
-## First Time? Let's Set Your Preferences
+## Migration Notice
 
-If this is your first time using MCP Helper, I'll ask you about your preferred interaction style:
-- **Verbosity**: How detailed should my responses be? (1=minimal to 5=comprehensive)
-- **Tone**: How should I communicate? (professional, friendly, casual, technical, mentoring)
-- **Depth**: How much context do you want? (quick, balanced, thorough)
+The content from this quick-start guide has been moved to CLAUDE.md to follow the new project organization pattern where:
+- **CLAUDE.md** serves as the main instruction file for Claude Code
+- **README.md** provides project overview for humans
+- **Playbooks/** contain detailed conversation workflows
 
-These preferences will be saved to your CLAUDE.md file and used for all future conversations. You can change them anytime by saying "change my interaction preferences" or "be more/less verbose".
+## How to Access
 
-## Smart Server Recommendations
+When MCP-Helper V2 is cloned into your project, start with:
+> "There is a CLAUDE.md file in mcp-helper-v2, tell me what options I have"
 
-I use an **Agentic Usefulness Rating System** to recommend the best servers for your workflow:
-- **Human Verification Rating (1-5)**: How well the server aids human oversight and collaboration
-- **AI Agent Rating (1-5)**: How essential the server is for autonomous AI tasks
+Or simply:
+> "Show me the MCP-Helper V2 options"
 
-Based on your workflow type, I'll recommend:
-- **Solo Developers**: Servers with AI Rating ≥ 4 for maximum autonomy
-- **Team Projects**: Balanced servers with high ratings in both dimensions
-- **Review-Heavy Workflows**: Servers with Human Rating ≥ 4 for oversight
+## Quick Reference
 
-Learn more: [Rating System Explanation](rating-explanation.md)
-
-## Available Conversations
+### Available Conversations
 
 Please tell me which type of configuration help you need:
 
@@ -161,4 +156,6 @@ If this is your first time, I'll start by asking about your interaction preferen
 
 ---
 
-**New to Subagents?** Check out our [Subagent Configuration Guide](subagent-configuration-guide.md) for detailed information about creating specialized AI assistants with optimized MCP protocols!
+---
+
+**Important**: This guide is now maintained in [CLAUDE.md](CLAUDE.md). Please refer to that file for the latest instructions and conversation options. The CLAUDE.md file provides Claude Code with the full context of MCP-Helper V2's capabilities when the project is cloned into your host project.

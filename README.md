@@ -2,6 +2,8 @@
 
 A conversational framework for configuring MCP servers with Claude Code.
 
+> **For Claude Code**: When this project is cloned as a subproject, refer to [CLAUDE.md](CLAUDE.md) for detailed instructions on how to interact with this framework. CLAUDE.md is the primary instruction file that Claude Code should read.
+
 ## Quick Start
 
 1. Clone this repository into your project:
@@ -15,6 +17,9 @@ A conversational framework for configuring MCP servers with Claude Code.
    ```
 
 3. Tell Claude:
+   > "There is a CLAUDE.md file in mcp-helper-v2, tell me what options I have"
+   
+   Or for legacy compatibility:
    > "There is a file quick-start-guide.md in mcp-helper-v2, tell me what options I have"
 
 4. Choose your conversation type and follow the guided process.
