@@ -86,24 +86,38 @@ Perplexity → Brave Search → WebSearch
 
 ### 💻 Code & Repository Context
 
-#### GitHub (Multiple Use Cases)
-**When to use:**
+#### Git CLI vs GitHub MCP - Best Practice Policy
 
-1. **Repository Operations** (Primary)
-   - Creating PRs, issues, commits
-   - Managing repository settings
-   - Code reviews and collaboration
+**Use Git CLI (native Bash) for:**
+- Local operations: commits, branches, staging, stashing
+- History management: rebase, amend, bisect
+- Local analysis: diff, blame, log, status
+- Tags: Creating and managing version tags
+- Basic push/pull: Syncing with remote
 
-2. **Public Repo Research** (Context Provider)
-   - Need implementation examples from known repos
-   - Understanding how others solved similar problems
-   - Getting context about libraries/frameworks from source
+**Use GitHub MCP for:**
+- Pull Requests: Create, review, merge, checkout
+- Issues: Create, search, triage, label
+- Code Review: Comments, approvals, suggestions
+- Repository Research: Analyzing public repos for patterns
+- Cross-repo queries: Finding similar implementations
+- Releases: Publishing with notes and assets
+- CI/CD status: Checking workflow runs
 
 **Example scenarios:**
 ```
-"Show me how Vercel implements caching in Next.js repo" → GitHub
-"Find authentication examples in the Supabase repo" → GitHub
-"How does React handle state updates internally?" → GitHub (facebook/react)
+# Git CLI (Bash)
+"Commit my changes" → git add . && git commit -m "message"
+"Check what changed" → git diff
+"Create a feature branch" → git checkout -b feature-branch
+"Rebase on main" → git rebase main
+
+# GitHub MCP
+"Create a PR from this branch" → GitHub MCP
+"Show me how Vercel implements caching in Next.js repo" → GitHub MCP
+"Find authentication examples in the Supabase repo" → GitHub MCP
+"Check if there's an issue about this error" → GitHub MCP
+"Review and approve PR #123" → GitHub MCP
 ```
 
 **Best Practice:**
