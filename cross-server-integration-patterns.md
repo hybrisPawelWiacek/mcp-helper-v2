@@ -47,18 +47,36 @@ Example workflow:
 5. Step 4: **Docker** runs tests in container
 6. Step 5: **GitHub** creates PR with changes
 
-### 3. Memory + Reasoning
-**Servers**: OpenMemory/Memory Service ↔ Sequential Thinking
-**Pattern**: Store insights → Retrieve for future decisions
+### 3. Dual Memory Pattern (Knowledge Graph + Project Notes)
+**Servers**: Memory MCP (Knowledge Graph) + Serena Memory (Markdown)
+**Pattern**: Global structured knowledge + Project-specific documentation
+
+Example workflow:
+1. **Serena** discovers authentication pattern in project
+2. **Serena Memory** saves: "auth_patterns.md" with project-specific notes
+3. **Memory MCP** creates entity: "OAuth Implementation" with relationships
+4. **Memory MCP** links to entities: "JWT", "RefreshToken", "ProjectX"
+5. Next project queries **Memory MCP** for OAuth patterns (global)
+6. Current project uses **Serena Memory** for local conventions
+
+**Key Distinction**:
+- **Memory MCP**: Knowledge graph with entities/relations (global, structured)
+- **Serena Memory**: Markdown files per project (local, free-form)
+
+### 4. Memory + Reasoning
+**Servers**: Memory MCP ↔ Sequential Thinking
+**Pattern**: Store structured insights → Retrieve for future decisions
 
 Example workflow:
 1. Debugging session finds root cause
-2. **Memory Service** stores: "Function X fails when Y > 100"
-3. Week later, similar bug appears
-4. Agent queries **Memory**, finds previous solution
-5. Applies fix without re-debugging
+2. **Memory MCP** creates entity: "BugPattern-Y100" 
+3. **Memory MCP** adds observation: "Function X fails when Y > 100"
+4. **Memory MCP** creates relation: "BugPattern-Y100" → "affects" → "LoggingModule"
+5. Week later, similar bug appears
+6. **Memory MCP** graph search finds related patterns
+7. Agent traverses relationships to understand full context
 
-### 4. DevOps Loop Automation
+### 5. DevOps Loop Automation
 **Servers**: GitHub → Docker → Playwright → Slack → Atlassian
 **Pattern**: Code → Test → Verify → Notify → Track
 

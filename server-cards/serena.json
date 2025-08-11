@@ -38,18 +38,36 @@
       "Finding symbol definitions and references",
       "Code navigation and exploration",
       "Cross-file refactoring and symbol renaming",
-      "Project-wide TODO and comment searches",
+      "Project-specific markdown memory for code patterns",
       "IDE-like intelligence for code understanding"
     ],
     "project": [
       "Analyze this mcp-servers-config codebase structure",
       "Find and understand MCP server implementations",
       "Navigate code relationships in the project",
-      "Perform semantic searches for specific patterns",
+      "Save project-specific patterns as markdown memories",
       "Safe large-scale refactoring with all references updated",
       "Track function usage across 20+ files",
-      "Semantic diffs and context-aware edits"
+      "Document architectural decisions in project memories"
     ]
+  },
+  "memoryFeatures": {
+    "type": "Project-specific markdown files",
+    "notKnowledgeGraph": true,
+    "differentFromMemoryMCP": "Serena's memory is for PROJECT-SPECIFIC markdown notes about code patterns, NOT a knowledge graph like Memory MCP",
+    "capabilities": [
+      "write_memory: Save markdown notes about the project",
+      "read_memory: Read specific memory files",
+      "list_memories: See available memory files",
+      "delete_memory: Remove memory files"
+    ],
+    "useCases": [
+      "Document code patterns discovered during analysis",
+      "Save architectural decisions for the project",
+      "Note refactoring strategies for later use",
+      "Keep project-specific coding conventions"
+    ],
+    "synergyWithMemoryMCP": "Use Memory MCP for structured knowledge graphs, Serena for project markdown notes"
   },
   "prosCons": {
     "pros": [

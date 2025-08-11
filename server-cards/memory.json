@@ -27,17 +27,49 @@
   ],
   "useCases": {
     "generic": [
-      "Persistent storage of knowledge graphs",
-      "Creating entities and relationships",
-      "Tracking project context and decisions",
-      "Building semantic memory networks"
+      "Persistent storage of KNOWLEDGE GRAPHS (not markdown notes)",
+      "Creating entities with typed relationships",
+      "Cross-project context that persists globally",
+      "Building semantic networks of interconnected knowledge"
     ],
     "project": [
-      "Track project progress and decisions",
-      "Store server card metadata and relationships",
-      "Remember configuration patterns",
-      "Maintain development context across sessions"
+      "Track entities and relationships (NOT project files)",
+      "Store structured metadata with relations",
+      "Remember decisions as graph nodes with connections",
+      "Maintain global context (use Serena for project-specific notes)"
     ]
+  },
+  "differenceFromSerena": {
+    "critical": "Memory MCP is a KNOWLEDGE GRAPH system, Serena memory is PROJECT MARKDOWN files",
+    "memoryMCP": {
+      "type": "Knowledge graph with entities and relations",
+      "scope": "Global across all projects",
+      "structure": "Entities with observations and typed relationships",
+      "persistence": "Docker volume at ~/mcp-data/memory/",
+      "query": "Graph traversal and semantic search"
+    },
+    "serenaMemory": {
+      "type": "Simple markdown files (.md)",
+      "scope": "Project-specific (per activated project)",
+      "structure": "Free-form markdown documents",
+      "persistence": "Local .serena folder in project",
+      "query": "List and read specific files"
+    },
+    "whenToUseEach": {
+      "useMemoryMCP": [
+        "Building knowledge graphs with relationships",
+        "Tracking entities across multiple projects",
+        "Creating semantic networks of information",
+        "Storing structured, queryable knowledge"
+      ],
+      "useSerenaMemory": [
+        "Saving project-specific code patterns",
+        "Documenting architectural decisions for THIS project",
+        "Quick markdown notes about the current codebase",
+        "Project-specific refactoring strategies"
+      ]
+    },
+    "synergyPattern": "Use Memory MCP for structured knowledge graphs, Serena for project markdown documentation"
   },
   "prosCons": {
     "pros": [

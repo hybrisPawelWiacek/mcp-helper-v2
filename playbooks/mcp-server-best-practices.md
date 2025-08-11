@@ -160,6 +160,72 @@ Always use BEFORE implementing complex features to plan approach.
 **Best Practice:**
 Save after every major decision or problem solution.
 
+### 🎯 Critical Distinction: Memory MCP vs Serena Memory
+
+#### Memory MCP (Knowledge Graph System)
+**What it is:**
+- Full knowledge graph with entities and relations
+- Global scope across all projects
+- Structured data with semantic relationships
+- Graph traversal and semantic search capabilities
+
+**When to use Memory MCP:**
+- Building knowledge graphs about concepts, people, systems
+- Creating semantic relationships between entities
+- Cross-project knowledge that needs structure
+- Complex queries requiring graph traversal
+- When you need: "Show me all entities related to authentication"
+
+**Example:**
+```
+Entity: "OAuth2.0" 
+Relations: implements → "Authentication"
+          used_by → "ProjectX API"
+          requires → "Client Credentials"
+```
+
+#### Serena Memory (Project Markdown Files)
+**What it is:**
+- Simple markdown files (.md) in project's .serena folder
+- Project-specific scope only
+- Free-form documentation and notes
+- File-based retrieval (no graph queries)
+
+**When to use Serena Memory:**
+- Project-specific code patterns and conventions
+- Architecture decisions for THIS project
+- Local development notes and TODOs
+- Code snippets and examples specific to project
+- When you need: "What was our decision about error handling?"
+
+**Example:**
+```markdown
+# error_handling_patterns.md
+We use Result<T, E> pattern throughout the codebase...
+```
+
+#### Synergetic Usage Pattern
+```
+1. Use Memory MCP for:
+   - Global knowledge graphs
+   - Cross-project patterns
+   - Semantic relationships
+   
+2. Use Serena Memory for:
+   - Project-specific notes
+   - Local conventions
+   - Code pattern documentation
+   
+3. Together they provide:
+   - Memory MCP: "What authentication methods exist?"
+   - Serena: "How does THIS project implement auth?"
+```
+
+**Never confuse:**
+- Memory MCP ≠ Serena memory (completely different systems)
+- Knowledge graphs ≠ Markdown files
+- Global scope ≠ Project scope
+
 ## Advanced Patterns
 
 ### Pattern 1: Documentation Waterfall
