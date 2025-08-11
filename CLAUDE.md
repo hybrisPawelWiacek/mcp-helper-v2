@@ -48,6 +48,13 @@ I'll ask about your preferred interaction style:
 #### 📁 Project Organization
 11. **"Set up CLAUDE.md files for subprojects"** → [Setup Project CLAUDE.md](playbooks/setup-project-claude-md.md)
 
+#### 📖 Best Practices & Guides
+12. **"Show MCP server best practices"** → [MCP Server Best Practices](playbooks/mcp-server-best-practices.md)
+   - Tool selection hierarchy and fallback chains
+   - When to use Context7 vs Firecrawl vs Perplexity
+   - GitHub for public repo research patterns
+   - Token optimization strategies
+
 ## Project Structure
 ```
 mcp-helper-v2/

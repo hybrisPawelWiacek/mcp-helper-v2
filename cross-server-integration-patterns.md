@@ -4,17 +4,36 @@
 
 The true power of MCP servers emerges when they work together. This document outlines proven patterns for combining MCP servers to create powerful agentic workflows.
 
+## Usage Policies & Best Practices
+
+### Documentation Hierarchy
+1. **Context7** (Primary): Official framework/library documentation
+2. **Firecrawl** (Fallback): When you have specific documentation URLs not in Context7
+3. **Perplexity** (Research): When documentation needs synthesis from multiple sources
+
+### Research Strategy
+1. **Perplexity** (Primary): Open-ended research, best practices, comparisons
+2. **Brave Search** (Fallback): Privacy-focused or when Perplexity unavailable
+3. **WebSearch** (Last Resort): Basic web searching
+
+### Code Context
+1. **Serena** (Local Only): YOUR project's codebase - 37% faster than grep
+2. **GitHub** (External): Public repo research, implementation examples
+3. **Never**: Use Serena for external code or GitHub for local code
+
 ## Core Integration Patterns
 
 ### 1. Knowledge Retrieval + Execution
-**Servers**: Brave Search/Perplexity → GitHub/Serena
-**Pattern**: Search for solutions → Apply in code
+**Servers**: Context7/Perplexity → GitHub/Serena
+**Pattern**: Get documentation → Find examples → Apply in code
 
 Example workflow:
-1. Agent encounters error: "TypeError: X is not a function"
-2. **Perplexity MCP** searches for solution with sources
-3. **GitHub MCP** implements the fix in code
-4. **Slack MCP** notifies team of resolution
+1. Agent needs to implement OAuth
+2. **Context7** fetches OAuth2 specification
+3. **GitHub MCP** checks "panva/node-oidc-provider" for examples
+4. **Serena MCP** finds existing auth patterns locally
+5. **Sequential Thinking** plans integration
+6. **Memory** stores implementation decisions
 
 ### 2. Planning + Acting
 **Servers**: Sequential Thinking → Context7/Serena/Docker
