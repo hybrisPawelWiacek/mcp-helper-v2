@@ -47,9 +47,10 @@ Please tell me which type of configuration help you need:
 **Requirements**: Foundation servers (Sequential Thinking, Perplexity, Memory, Serena, Context7)
 
 #### 5. "I want to disable a global server for this project"
-**Playbook**: Disable Project Server  
+**Playbook**: [Exclude MCP Servers](playbooks/exclude-mcp-servers.md)  
 **For**: When you have global MCP servers but want to exclude specific ones from a project  
-**What I'll do**: Guide you through creating project overrides that disable global servers locally
+**What I'll do**: Guide you through environment variable exclusion with wrapper scripts  
+**Example**: Disable claude-code MCP to use native tools only
 
 ### 🤖 Subagent Configuration (NEW!)
 
